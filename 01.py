@@ -56,8 +56,7 @@ for i in range(len_files):
                      'imagecode']] = plot, tree, slide, image, treecode, imagecode
 
 metadata['treecode'] = pd.Categorical(metadata['treecode'])
-
-metadata.dropna(subset=['treecode'], inplace=True)
+# metadata.dropna(subset=['treecode'], inplace=True)
 
 os.chdir(wd_output)
 
